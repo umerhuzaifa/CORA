@@ -31,7 +31,7 @@ R0 = interval([0.48;4.98;0;-5],[0.52;5.02;0;-5]);
 
 params.R0 = zonotope(R0);      
 params.startLoc = 1;                               
-params.tFinal = 2.2;                 
+params.tFinal = 2.2 ;%2.2;                 
 
 
 % Reachability Options ----------------------------------------------------
@@ -39,7 +39,7 @@ params.tFinal = 2.2;
 % settings for continuous reachability 
 options.alg = 'lin';
 options.tensorOrder = 2;
-options.timeStep = 0.01;
+options.timeStep = 0.1;
 options.taylorTerms = 10;
 options.zonotopeOrder = 20;
 
