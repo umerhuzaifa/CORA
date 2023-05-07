@@ -19,6 +19,8 @@ function example_hybrid_reach_ARCH22_brake_BRKNC01()
 
 %------------- BEGIN CODE --------------
 
+dbstop if error
+
 % Dynamic System ----------------------------------------------------------
 
 % parameter values
@@ -85,9 +87,9 @@ options.guardOrder = 5;
 
 % Specification -----------------------------------------------------------
 
-hs = halfspace([0 -1 0 0 0],-x0);
-
-spec = specification(hs,'unsafeSet');
+% hs = halfspace([0 -1 0 0 0],-x0);
+% 
+% spec = specification(hs,'unsafeSet');
 
 
 % Reachability Analysis ---------------------------------------------------

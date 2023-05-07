@@ -63,7 +63,7 @@ options.zonotopeOrder = 20;
 
 % Reachability Analysis ---------------------------------------------------
 
-clock = tic;
+% clock = tic;
 R = {};
 
 for i = 1:1000
@@ -77,12 +77,12 @@ for i = 1:1000
     
 end
 
-tComp = toc(clock);
+% tComp = toc(clock);
 
 
 % Verification ------------------------------------------------------------
 
-clock = tic;
+% clock = tic;
 res = 1;
 
 for i = 1:length(R)
@@ -92,10 +92,10 @@ for i = 1:length(R)
       break;
    end
 end
-tVer = toc(clock);
+% tVer = toc(clock);
 
 disp(['specifications verified: ',num2str(res)]);
-disp(['computation time: ',num2str(tVer + tComp)]);
+% disp(['computation time: ',num2str(tVer + tComp)]);
  
 
 % Visualization -----------------------------------------------------------

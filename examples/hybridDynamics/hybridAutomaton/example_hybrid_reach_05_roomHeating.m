@@ -43,7 +43,7 @@ params.U = zonotope(4,0.01);
 % settings for continuous reachability 
 options.taylorTerms = 5; 
 options.zonotopeOrder = 10; 
-options.timeStep = 0.005; 
+options.timeStep = 0.05; 
  
 % settings for hybrid systems
 options.enclose = {'box','pca'}; 

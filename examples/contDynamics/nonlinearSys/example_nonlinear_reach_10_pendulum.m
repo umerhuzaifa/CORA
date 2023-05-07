@@ -25,7 +25,8 @@ params.tFinal = 2;   % Final time
 
 P.L = 0.2;           % length of the rod (m)
 P.mu = 0.5;          % friction
-
+P.k = 9.8;           % gravitational acceleration
+P.b = 0.2;           % damping coefficient
 
 % Initial set for reachability analysis
 initangle = 120; % degrees
